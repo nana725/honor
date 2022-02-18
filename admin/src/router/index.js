@@ -16,11 +16,6 @@ const routes = [
       {path:'/categories/list',component:CategoryList}
     ]
   },
-  {
-    path: '/',
-    name: 'categoryedit',
-    component: CategoryEdit
-  },
 ]
 
 const router = new VueRouter({
