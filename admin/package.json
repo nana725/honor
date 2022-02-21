@@ -14,7 +14,8 @@
     "node-sass": "^6.0.0",
     "sass-loader": "^10.2.0",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue2-editor": "^2.10.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -40,7 +41,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "vue/no-unused-vars":"off"
+      "vue/no-unused-vars": "off"
     }
   },
   "browserslist": [

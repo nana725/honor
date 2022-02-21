@@ -3,7 +3,7 @@
     <h1>{{id ? '编辑':'新建'}}英雄</h1>
     <el-form label-width="120px" @submit.native.prevent="save">
 
-      <el-tabs value="skills" type="border-card">
+      <el-tabs type="border-card">
         <el-tab-pane label="基本信息">
  <el-form-item label="名称">
         <el-input v-model="model.name"></el-input>
@@ -65,7 +65,7 @@
 
         </el-tab-pane>
 
-        <el-tab-pane label="技能" name="skills">
+        <el-tab-pane label="技能">
           <el-button size="small" @click="model.skills.push({})"><i class="el-icon-plus"></i>添加技能</el-button>
           <el-row type="flex" style="flex-wrap: wrap">
             <el-col :md="12" v-for="(item,i) in model.skills" :key="i">
@@ -175,27 +175,5 @@
 </script>
 
 <style>
-  .avatar-uploader .el-upload {
-    border: 1px dashed #d9d9d9;
-    border-radius: 6px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-  .avatar-uploader .el-upload:hover {
-    border-color: #409EFF;
-  }
-  .avatar-uploader-icon {
-    font-size: 28px;
-    color: #8c939d;
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
-    text-align: center;
-  }
-  .avatar {
-    width: 5rem;
-    height: 5rem;
-    display: block;
-  }
+
 </style>
