@@ -21,7 +21,7 @@
         </el-menu-item-group>
       </el-submenu>
 
-       <el-submenu index="2">
+      <el-submenu index="2">
         <template slot="title"><i class="el-icon-message"></i>运营管理</template>
         <el-menu-item-group>
           <template slot="title">广告位</template>
@@ -30,7 +30,7 @@
         </el-menu-item-group>
       </el-submenu>
 
-       <el-submenu index="3">
+      <el-submenu index="3">
         <template slot="title"><i class="el-icon-message"></i>系统设置</template>
         <el-menu-item-group>
           <template slot="title">分类</template>
