@@ -40,6 +40,14 @@ a{
         font-size:$size*$base-font-size;
     }
 }
+//text overflow
+.text-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 // width,height
 .w-100{
     width:100%;
@@ -123,12 +131,23 @@ a{
     padding: 0.2rem 0.6rem;
 }
 .nav {
+    display: flex;
     .nav-item{
         border-bottom: 3px solid transparent;
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.2rem;     
         &.active{
-            border-bottom: 3px solid #fff;
+            color:map-get($map: $colors, $key:'primary' );
+            border-bottom-color:map-get($map: $colors, $key:'primary' );
         }
+    }
+    &.nav-inverse{
+        .nav-item{
+            color:map-get($map: $colors, $key: 'white');
+            &.active{
+                border-bottom-color:map-get($map: $colors, $key:'white' ) ;
+            }
+        }
+
     }
     
 }
